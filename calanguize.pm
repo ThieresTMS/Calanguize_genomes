@@ -470,20 +470,20 @@ sub get_ORF {
       return (1);
     }
     if ($stop_codon !~ /TAA|TAG|TGA/i) {
-      print "Not valid stop codon\t$tmp_seq\n";
+      # print "Not valid stop codon\t$tmp_seq\n";
       return (1);
     }
     if (length($tmp_seq) % 3 == 0) {
     } else {
-      print "length not multiple of three\t$tmp_seq\n";
+      # print "length not multiple of three\t$tmp_seq\n";
       return (1);
     }
     if ($tmp_seq =~ /[^ACGT]/i) {
-      print "non-standard nucleotides\t$tmp_seq\n";
+      # print "non-standard nucleotides\t$tmp_seq\n";
       return (1);
     }
     if (length($tmp_seq) < $len_cutoff) {
-      print "length smaller than cutoff\n";
+      # print "length smaller than cutoff\n";
       return (1);
     }
     return (0);
