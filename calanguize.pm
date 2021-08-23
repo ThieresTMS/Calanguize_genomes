@@ -24,7 +24,7 @@ sub read_config_files { #read config files in the form element = value #comment
   close($fh_project_config);
  
   # -=-=-= PATH TO EXTERNAL PROGRAMS =-=-=-
-  $parameters{python_path} = read_config_file_line ('phyton', $fh_calanguize_config);
+  $parameters{python_path} = read_config_file_line ('python', $fh_calanguize_config);
   $parameters{busco_path} =  read_config_file_line ('busco', $fh_calanguize_config);
   $parameters{interpro_path} = read_config_file_line ('interpro', $fh_calanguize_config);
 
