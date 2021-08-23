@@ -7,7 +7,7 @@ use File::Spec::Functions qw(rel2abs);
 use File::Basename;
 use Parallel::ForkManager;
 use Cwd;
-require "./calaguinze.pm";
+require "./calanguize.pm";
 
 my $infile;
 my $verbose;
