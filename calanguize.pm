@@ -466,7 +466,7 @@ sub get_ORF {
     my $start_codon = substr($tmp_seq, 0, 3);
     my $stop_codon = substr($tmp_seq, -3);
     if ($start_codon !~ /ATG|GTG/i) {
-      print "Not valid start codon\t$tmp_seq\n";
+      # print "Not valid start codon\t$tmp_seq\n";
       return (1);
     }
     if ($stop_codon !~ /TAA|TAG|TGA/i) {
